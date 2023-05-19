@@ -2,7 +2,7 @@ const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
 const loadDataFromApi = require("./src/dbload/loadDataBase");
 require('dotenv').config();
-const { PORT } = process.env
+const { PORT } = process.PORT || 3001
 
 conn.sync({ alter: true })
     .then(() => {
