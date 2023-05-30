@@ -6,4 +6,7 @@ conn.sync({ force: true }).then(() => {
     server.listen(process.env.PORT || 3001, () => {
       console.log(`Server listening on port ${process.env.PORT || 3001}`);
     });
-  });
+  })
+    .then(() => {
+        loadDataFromApi();
+    });
