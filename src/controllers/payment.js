@@ -1,8 +1,8 @@
 const mercadopago = require("mercadopago");
 // require("dotenv").config();
 const { MERCADOPAGO_KEY } = process.env;
-const URL = 'http://localhost:3000/'
-const SUCCESS_URL = 'http://localhost:3000/success'
+const URL = 'https://front-serendipia.vercel.app/'
+const SUCCESS_URL = 'https://front-serendipia.vercel.app/success'
 
 mercadopago.configure({
   access_token: `${MERCADOPAGO_KEY}`,
